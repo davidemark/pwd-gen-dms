@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Password Generator DMS</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="./resources/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row vh-100 justify-content-center align-items-center">
+        <div class="col-11 borderCol position-relative">
+          <h1 class="text-center">PASSWORD GENERATOR</h1>
+          <div>
+            <h2 id="pwEl" class="text-center pb-2">Password Here</h2>
+          </div>
+
+          <!-- length -->
+          <div>
+            <!-- <label for="lengthEl">Password Length</label>
+            <input id="lengthEl" type="number" value="8" min="5" max="15" /> -->
+            <label id="lengthVal" for="lengthEl" class="form-label"></label>
+            <input
+              type="range"
+              class="form-range"
+              min="8"
+              max="15"
+              id="lengthEl"
+              value="8"
+            />
+          </div>
+
+          <!-- lowercase -->
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="lowerCaseEl"
+              >Contain Lowercase Letters</label
+            >
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="lowerCaseEl"
+              checked
+            />
+          </div>
+
+          <!-- uppercase -->
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="upperCaseEl"
+            />
+            <label class="form-check-label" for="upperCaseEl"
+              >Contain Uppercase Letters</label
+            >
+          </div>
+
+          <!-- number -->
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="numberEl"
+            />
+            <label class="form-check-label" for="numberEl"
+              >Contain Numbers</label
+            >
+          </div>
+
+          <!-- symbol -->
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="symbolEl"
+            />
+            <label class="form-check-label" for="symbolEl"
+              >Contain Symbols</label
+            >
+          </div>
+
+          <!-- Generate Button -->
+          <div class="d-flex justify-content-center">
+            <button id="btnGenerator" class="m-3">Generate Password</button>
+            <button id="btnClipboard" class="clipboard">
+              <i class="bi bi-clipboard-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my main -->
+    <script src="./resources/main/main.js"></script>
+  </body>
+</html>

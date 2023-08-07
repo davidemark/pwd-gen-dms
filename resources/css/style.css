@@ -1,0 +1,107 @@
+/********** Template CSS **********/
+:root {
+  --primary: #fea116;
+  --light: #f1f8ff;
+  --dark: #0f172b;
+}
+
+body {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.borderCol {
+  border: solid var(--primary);
+  border-radius: 10px;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+#btnGenerator {
+  font-weight: 600;
+  padding: 10px 20px;
+  color: var(--light);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 10px;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-check-input {
+  background-color: var(--light);
+  border-color: var(--primary);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-check-input.focus,
+.form-check-input:focus,
+.form-check-input.active,
+.form-check-input:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* .btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--light);
+  --bs-btn-bg: var(--dark);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-border-radius: 0.5rem;
+  --bs-btn-hover-color: var(--light);
+  --bs-btn-hover-bg: var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+  --bs-btn-active-color: var(--light);
+  --bs-btn-active-bg: var(--dark);
+  --bs-btn-active-border-color: var(--primary);
+} */
+
+/* .btn-bd-primary:focus,
+.btn-bd-primary:active {
+  color: var(--light);
+  background-color: var(--dark);
+  border-color: var(--primary);
+} */
+
+/* .btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0;
+} */
+
+#btnClipboard {
+  /* position: absolute;
+  top: 8px;
+  right: 8px; */
+  /* font-weight: 600; */
+  /* padding: 10px 20px; */
+  color: var(--light);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 10px;
+  margin: 16px;
+  padding: 10px 14px;
+}
+
+.form-range::-webkit-slider-thumb {
+  background: var(--primary);
+}
+
+.form-range::-moz-range-thumb {
+  background: var(--light);
+}
+
+.form-range::-ms-thumb {
+  background: var(--light);
+}
